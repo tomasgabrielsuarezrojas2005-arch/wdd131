@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -11,11 +11,9 @@ body{
 header{
     width: 100%;
 }
-#course-title{
+#course-title {
     text-align: center;
     display: block;
-}
-#course-title p {
     padding: 1.5rem;
     font-size: large;
     background-color:  #1B3A57;
