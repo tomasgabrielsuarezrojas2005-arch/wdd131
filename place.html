@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="Explore Chile through information about its geography, culture, climate, and weather."
+    >
+    <meta name="author" content="Tomás Suárez">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>Country Page | Tomás Suárez</title>
+</head>
+<body>
+    <header>
+        <h1>CHILE</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source 
+                srcset="images/chile-large.webp"
+                media="(min-width: 1000px)"
+                >
+                <img src="images/chile-small.webp" alt="Landscape of Valdivia, Chile" >
+            </picture>
+            <section class="data">  
+                <h2>Data</h2>
+                <p><strong>Area:</strong>  756,102 km²</p>
+                <p><strong>Population:</strong> 20,150,948</p>
+                <p><strong>Capital:</strong> Santiago</p>
+                <p><strong>Languages:</strong> Spanish</p>
+                <p><strong>Currency:</strong> Chilean Peso</p>
+                <p><strong>Time Zone:</strong> UTC-4</p>
+                <p><strong>Calling Code:</strong> +56</p>
+                <p><strong>Internet TLD:</strong> .cl</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img  class="weather-icon" src="images/rainy.svg" alt="Rainy weather Icon" width="80" height="80">
+                <div class="weather-information">
+                    <p><strong>Temperature:</strong> 8°C</p>
+                    <p><strong>Conditions:</strong> Rainy</p>
+                    <p><strong>Wind:</strong> 12 km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p> 
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+    &copy; <span id="currentyear"></span>
+    Tomás Suárez | Chile 
+    </p>
+    <p id="lastModified"> </p>
+    </footer>
+</body>
+</html>

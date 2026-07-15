@@ -1,0 +1,55 @@
+@media screen and (min-width:1185px){
+    h1::before{
+        content:"☆---";
+    }
+    h1::after{
+        content:"---☆";
+    }
+    main{
+    max-width: 1600px;
+    margin: 0 auto;
+    }
+    .hero{
+        position: relative;
+    }
+    .hero picture {
+    display: block;
+    border-bottom: whitesmoke .1rem solid;
+}
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+    .data, .weather{
+        position: absolute;
+        background-color: rgb(255 255 255 / 70%);
+        width: 20%;
+    }
+    .data h2,
+    .weather h2 {
+    padding: 0.75rem;
+    color: white;
+    background-color: rgb(5, 5, 148);
+    width:100%;
+    position: relative;
+    right: 25px;
+}
+    .weather h2::after{
+    content:"🌧️";
+    }
+    .weather-icon{
+        display: none;
+    }
+    .data {
+    top: 40px;
+    left: 40px;
+}
+    .weather{
+        top:350px;
+        right:40px;
+    }
+    footer{
+        border-top:none;
+    }
+}

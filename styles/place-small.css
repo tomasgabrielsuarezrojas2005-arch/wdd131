@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    width: 80%;
+    text-align: center;
+    background-color: rgb(5, 5, 148);
+    padding: .5rem;
+    color: whitesmoke;
+    letter-spacing: 30px;
+    font-weight: bolder;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.hero picture{
+    display: flex;
+    width:100%;
+    justify-content: center;
+    border-bottom: red solid .2rem;
+}
+.hero picture img{
+    width: 100%;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: rgba(178, 176, 176, 0.755) 1px solid;
+}
+.data h2{
+    margin-bottom: 1rem;
+}
+.data p{
+    width: 80%;
+    padding: .5rem;
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.weather h2{
+    margin-bottom: 1rem;
+}
+.weather p{
+    padding: .5rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(5, 5, 148);
+    color: whitesmoke;
+    border-top: 1px solid red;
+}
