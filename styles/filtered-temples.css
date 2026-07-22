@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, serif;
+}
+body{
+    width: 100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:.5rem;
+    background-color: blueviolet;
+    color:#fff;
+}
+header p{
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+nav{
+    display: none;
+    flex-direction: column;
+}
+nav.open{
+    display: flex;
+    padding: 1rem;
+}
+#menu{
+    cursor: pointer;
+    background-color: transparent;
+    border:none;
+    font-size: 40px;
+    color: #fff;
+}
+
+nav a{
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: medium;
+    letter-spacing: 4px;
+    color: #fff;
+    padding: .5rem;
+    transition: 0.3s ease;
+}
+nav a:hover{
+    background-color: rgb(67, 0, 130);
+}
+main {
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+#temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+.temple-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+.temple-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.temple-card h2 {
+    margin-bottom: 0.5rem;
+}
+
+.temple-card p {
+    margin: 0.25rem 0;
+}
+
+.temple-card span {
+    font-weight: bold;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+figure{
+    padding: 1rem;
+}
+main figcaption{
+    text-align: center;
+    padding-top: .5rem ;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+#lastModified{
+    color: rgb(228, 242, 30);
+}
