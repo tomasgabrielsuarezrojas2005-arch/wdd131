@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libertinus Math', serif;
+}
+body{
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+background-color: #f8fafc
+}
+header{
+    width: 100%;
+    background-color: #2F4F4F;
+    color: #f8fafc;
+    height: 10vh;
+    align-content: center;
+}
+h1{
+    text-align: center;
+    letter-spacing: 8px;
+}
+h2{
+    padding: .9rem;
+    background-color:#e2e8f0 ;
+    text-align: center;
+    border-radius: 10px;
+}
+p, ul{
+    padding:1.5rem;
+    border: 1.5px dotted #c1cdcd;
+    border-radius: 15px;
+    margin-top: .5rem;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+.name{
+    width: 100%;
+    display: flex;
+    grid-column: 1/3;
+    justify-content: center;
+}
+section{
+    width:100%;
+    padding:2rem;
+}
+.wireframe{
+    grid-column:1/-1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.wireframe h2{
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;
+    font-size:xx-large;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+img{
+    max-width: 500px;
+    max-height: 800px;
+}
+footer{
+    width: 100%;
+    background-color: #2F4F4F;
+    color:#f8fafc;
+}
+footer p{
+    border:none;
+    text-align: center;
+}
