@@ -31,6 +31,9 @@ form{
     margin-bottom: 1rem;
 }
 .form-item label{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: #f8fafc;
     padding: .5rem; 
 }
@@ -63,15 +66,9 @@ margin-right: 5%;
 .rating-group input{
     width: 1.3rem;
 }
-.form-item label{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
 input[type="checkbox"] {
-  transform: scale(1.5); 
-  margin-right: 10px;    
+  transform: scale(1.5);    
   cursor: pointer;
   margin-right: 1rem;
   height: fit-content;
