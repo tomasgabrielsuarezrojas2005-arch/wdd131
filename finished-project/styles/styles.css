@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Libertinus Math, serif;
+}
+body{
+    width: 100%;
+    background-color: #fff;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    background-color: #2F4F4F;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    height: 10vh;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    width: 99%;
+    background-color: #64a3a3;
+    margin-top: 1rem;
+    padding:.5rem;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    margin-bottom: .5rem    ;
+    color: #fff;
+}
+#product-form{
+    width: 100%;
+}
+input[type="text"], input[type="number"]{
+    width: 70%;
+    border: none;
+    padding: .2rem
+}
+.form-group{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    color: #fff;
+    align-self: center;
+}
+select{
+    text-align: center;
+    width: 70%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color:#2F4F4F    ;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 40px 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+button[type="submit"]{
+    width: 100%;
+    height: 2.3rem;
+    border: none;
+    cursor: pointer;
+    background-color: #2F4F4F;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+button[type="submit"]:hover{
+    background-color: #223939;
+    transform: scale(0.96); 
+}
+.inventory-section{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    background-color: #5c9797;
+    margin-top: 1.5rem;
+    padding:.5rem;
+    border-radius: 10px;
+    color: #fff;
+}
+.table-container{
+    width: 100%;
+    overflow-x: auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+#inventory-body{
+    width: 90%;
+}
+thead{
+    margin-bottom: .5rem;
+}
+th, td {
+    border-bottom: 1px solid #223939; 
+    text-align: center;
+    padding: .3rem;
+}
+.delete-btn{
+    background-color:transparent;
+    border: none;
+    color: #dc2626;
+    font-size: x-large;
+    cursor: pointer;
+}
+.total-value{
+    text-align: center;
+}
+.info-section {
+    background-color:#64a3a3; 
+    color: white; 
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px; 
+    text-align: center; 
+}
+.info-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.info-section img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    background-color: #2F4F4F;
+    color: #fff;
+    height: 8vh;
+    text-align: center;
+    align-content: center;
+}
+@media (min-width: 820px) {
+    main {
+        display: grid;
+        grid-template-columns: 0.8fr 1.5fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .form-section, .inventory-section {
+        align-self: flex-start;
+        margin-top: 1.5rem; 
+    }
+    
+    .form-section {
+        margin-left: .5rem;
+    }
+    
+    h2 {
+        margin-bottom: 2rem;
+        letter-spacing: 4px;
+        font-weight: bolder;
+    }
+    
+    input[type="text"], input[type="number"], select {
+        width: 100%;
+        height: 45px; 
+        padding: 0.3rem 0.5rem;
+        font-size: large;
+        box-sizing: border-box;
+    }
+    
+    .form-group {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 1rem; 
+    }
+    
+    .form-group label {
+        align-self: flex-start; 
+        margin-bottom: 0.4rem;
+    }
+
+    button[type="submit"] {
+        height: 60px; 
+        font-size: x-large;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-top: 1rem;
+    }
+    
+    .info-section {
+        margin: .5rem;
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+    
+    .info-section h2 {
+        grid-column: 1 / 3; 
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 100%;
+        max-height: 350px;
+        object-fit: cover;
+    }
+}
